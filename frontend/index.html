@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vanam Café — Forest-inspired coffee in Kakinada</title>
+<meta name="description" content="Vanam is a cinematic forest-themed café on Auditorium Road, Dwaraka Nagar, Kakinada. Slow-brewed coffee, hand-crafted desserts and quiet corners under hanging greenery." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">Vanam<span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#offers">Offers</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reserve">Reserve</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <img src="images/hero-cafe.jpg" alt="Vanam café interior with hanging greenery" class="hero-bg" />
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <span class="eyebrow">Forest-inspired café · Kakinada</span>
+    <h1>Slow coffee under a <span class="gold">canopy of green</span>.</h1>
+    <p>Single-origin espresso, hand-crafted desserts and quiet woodland corners on Auditorium Road, Dwaraka Nagar.</p>
+    <div class="hero-actions">
+      <a href="#reserve" class="btn btn-gold">Reserve a Table</a>
+      <a href="#menu" class="btn btn-ghost">Explore Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container grid-2">
+    <div class="about-img">
+      <img src="images/gallery-1.jpg" alt="Cozy reading nook at Vanam" />
+      <img src="images/gallery-2.jpg" alt="Barista pouring latte art" class="float-img" />
+    </div>
+    <div>
+      <span class="eyebrow">Our Story</span>
+      <h2>A woodland café in the heart of <span class="gold">Kakinada</span>.</h2>
+      <p>Vanam — meaning <em>forest</em> in Sanskrit — was born from a simple idea: bring the calm of a deep green canopy into a busy city evening. From single-origin espresso to handmade desserts, every detail invites you to breathe a little slower.</p>
+      <ul class="features">
+        <li><strong>Forest-inspired</strong><span>Hanging greenery, warm wood and earthy tones.</span></li>
+        <li><strong>Crafted with love</strong><span>Every cup pulled by hand, every plate seasonal.</span></li>
+        <li><strong>Quiet luxury</strong><span>An unhurried atmosphere where conversations linger.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Menu</span>
+      <h2>Brewed with <span class="gold">intention</span>.</h2>
+    </div>
+    <div class="menu-filters">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="coffee">Coffee</button>
+      <button class="chip" data-filter="cold">Cold</button>
+      <button class="chip" data-filter="dessert">Desserts</button>
+      <button class="chip" data-filter="snack">Snacks</button>
+    </div>
+    <div class="menu-grid" id="menuGrid">
+      <article class="menu-card" data-cat="coffee">
+        <img src="images/menu-coffee.jpg" alt="Cappuccino" />
+        <div class="menu-body"><h3>Forest Cappuccino</h3><p>House blend, velvety microfoam.</p><span class="price">₹180</span></div>
+      </article>
+      <article class="menu-card" data-cat="coffee">
+        <img src="images/menu-coffee.jpg" alt="Pour over" />
+        <div class="menu-body"><h3>Single-origin Pour-Over</h3><p>Rotating beans, bright and clean.</p><span class="price">₹220</span></div>
+      </article>
+      <article class="menu-card" data-cat="cold">
+        <img src="images/menu-cold.jpg" alt="Iced latte" />
+        <div class="menu-body"><h3>Canopy Cold Brew</h3><p>16-hour steep, smooth finish.</p><span class="price">₹200</span></div>
+      </article>
+      <article class="menu-card" data-cat="cold">
+        <img src="images/menu-cold.jpg" alt="Iced matcha" />
+        <div class="menu-body"><h3>Iced Matcha</h3><p>Ceremonial grade, lightly sweetened.</p><span class="price">₹240</span></div>
+      </article>
+      <article class="menu-card" data-cat="dessert">
+        <img src="images/menu-dessert.jpg" alt="Chocolate cake" />
+        <div class="menu-body"><h3>Dark Forest Cake</h3><p>70% cocoa, cherry compote.</p><span class="price">₹260</span></div>
+      </article>
+      <article class="menu-card" data-cat="dessert">
+        <img src="images/menu-dessert.jpg" alt="Cheesecake" />
+        <div class="menu-body"><h3>Burnt Basque Cheesecake</h3><p>Caramelised, custardy centre.</p><span class="price">₹240</span></div>
+      </article>
+      <article class="menu-card" data-cat="snack">
+        <img src="images/menu-snack.jpg" alt="Avocado toast" />
+        <div class="menu-body"><h3>Avocado Sourdough</h3><p>Chilli oil, lime, sea salt.</p><span class="price">₹280</span></div>
+      </article>
+      <article class="menu-card" data-cat="snack">
+        <img src="images/menu-snack.jpg" alt="Croissant" />
+        <div class="menu-body"><h3>Almond Croissant</h3><p>Twice-baked, frangipane filled.</p><span class="price">₹180</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section id="offers" class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Special Offers</span>
+      <h2>Little <span class="gold">indulgences</span>.</h2>
+    </div>
+    <div class="offers-grid">
+      <div class="offer-card glass"><h3>Morning Brew</h3><p>20% off all coffees before 10 AM.</p></div>
+      <div class="offer-card glass"><h3>Cake + Coffee</h3><p>Any dessert + cappuccino at ₹399.</p></div>
+      <div class="offer-card glass"><h3>Weekend Canopy</h3><p>Complimentary dessert on bookings of 4+.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Gallery</span>
+      <h2>A walk through <span class="gold">Vanam</span>.</h2>
+    </div>
+    <div class="gallery">
+      <img src="images/gallery-1.jpg" alt="Reading nook" class="tall" />
+      <img src="images/gallery-3.jpg" alt="Café exterior at dusk" />
+      <img src="images/menu-coffee.jpg" alt="Cappuccino" />
+      <img src="images/gallery-4.jpg" alt="Flatlay with eucalyptus" />
+      <img src="images/gallery-2.jpg" alt="Latte art pour" class="tall" />
+      <img src="images/menu-dessert.jpg" alt="Chocolate dessert" />
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section id="reserve" class="section">
+  <div class="container reserve glass">
+    <div class="reserve-info">
+      <span class="eyebrow">Reserve</span>
+      <h2>Save your seat <span class="gold">under the canopy</span>.</h2>
+      <p>Weekends fill up fast. Tell us when you'd like to visit and we'll keep the perfect table ready.</p>
+      <ul>
+        <li>• Free cancellation up to 2 hours before</li>
+        <li>• Outdoor canopy seating available</li>
+        <li>• Birthday & anniversary setups on request</li>
+      </ul>
+    </div>
+    <form id="reserveForm" class="form">
+      <label>Full name<input name="name" required minlength="2" placeholder="Your name" /></label>
+      <label>Phone<input name="phone" required pattern="^\+?[0-9 ]{7,15}$" placeholder="+91 90000 00000" /></label>
+      <div class="row">
+        <label>Date<input type="date" name="date" required /></label>
+        <label>Time<input type="time" name="time" value="19:00" required /></label>
+      </div>
+      <label>Guests<input type="number" name="guests" min="1" max="20" value="2" required /></label>
+      <button type="submit" class="btn btn-gold w-full">Reserve My Table</button>
+      <p class="form-msg" id="reserveMsg"></p>
+    </form>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Find Us</span>
+      <h2>Come <span class="gold">say hello</span>.</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="glass info"><h3>Visit</h3><p>Auditorium Road, Dwaraka Nagar<br/>Kakinada, Andhra Pradesh, India</p></div>
+        <div class="glass info"><h3>Call</h3><p>+91 90000 00000</p></div>
+        <div class="glass info"><h3>Email</h3><p>hello@vanamcafe.in</p></div>
+        <div class="glass info"><h3>Hours</h3><p>Mon – Sun · 8 AM – 11 PM</p></div>
+      </div>
+      <div class="map">
+        <iframe title="Vanam café location" src="https://www.google.com/maps?q=Dwaraka+Nagar+Kakinada&output=embed" loading="lazy"></iframe>
+      </div>
+    </div>
+    <form id="contactForm" class="form contact-form glass">
+      <h3>Send us a message</h3>
+      <div class="row">
+        <label>Name<input name="name" required /></label>
+        <label>Email<input type="email" name="email" required /></label>
+      </div>
+      <label>Message<textarea name="message" rows="4" required></textarea></label>
+      <button type="submit" class="btn btn-gold">Send Message</button>
+      <p class="form-msg" id="contactMsg"></p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="#home" class="logo">Vanam<span>.</span></a>
+        <p>Forest-inspired coffee, brewed slow in Kakinada.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#reserve">Reserve</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Auditorium Road, Dwaraka Nagar, Kakinada</p>
+        <p>+91 90000 00000</p>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> Vanam Café. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- FLOATING -->
+<a class="float-wa" href="https://wa.me/910000000000" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<button class="float-top" id="topBtn" aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
