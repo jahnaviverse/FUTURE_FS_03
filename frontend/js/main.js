@@ -71,7 +71,7 @@ if (reserveForm) {
     showMsg(reserveMsg, "Sending...", true);
 
     try {
-      const res = await fetch(`${API_BASE}/reservations`, {
+      const res = await fetch(`${API_BASE}/api/reservations`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -129,7 +129,7 @@ if (contactForm) {
     showMsg(contactMsg, "Sending...", true);
 
     try {
-      const res = await fetch(`${API_BASE}/contact`, {
+      const res = await fetch(`${API_BASE}/api/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
