@@ -1,5 +1,5 @@
 // Backend API URL
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://future-fs-03-ms8t.onrender.com";
 
 // Current year
 document.getElementById("year").textContent = new Date().getFullYear();
